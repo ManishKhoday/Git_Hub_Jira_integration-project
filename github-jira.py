@@ -30,7 +30,7 @@ def createJira():
                 {
                     "content": [
                         {
-                            "text": "Order entry fails when selecting supplier.",
+                            "text": "GitHub to Jira issue Done.",
                             "type": "text"
                         }
                     ],
@@ -41,7 +41,7 @@ def createJira():
              "version": 1
         },
         "project": {
-           "key": "AB"
+           "key": "SCRUM"
         },
         "issuetype": {
             "id": "10003"
@@ -63,4 +63,4 @@ def createJira():
     return json.dumps(json.loads(response.text), sort_keys=True, indent=4, separators=(",", ": "))
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000) 
