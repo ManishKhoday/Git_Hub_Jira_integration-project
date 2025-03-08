@@ -4,6 +4,7 @@ import requests
 from requests.auth import HTTPBasicAuth
 import json
 from flask import Flask
+import os
 
 app = Flask(__name__)
 
@@ -13,7 +14,7 @@ def createJira():
 
     url = "https://khodaymanish.atlassian.net/rest/api/3/issue"
 
-    API_TOKEN=""
+    API_TOKEN=os.getenv('API_TOKEN')
 
     auth = HTTPBasicAuth("khodaymanish@gmail.com", API_TOKEN)
 
@@ -43,7 +44,7 @@ def createJira():
            "key": "AB"
         },
         "issuetype": {
-            "id": "10006"
+            "id": "10003"
         },
         "summary": "Main order flow broken",
     },
