@@ -30,7 +30,7 @@ def createJira():
                 {
                     "content": [
                         {
-                            "text": "GitHub to Jira issue Done.",
+                            "text": "Order entry fails when selecting supplier.",
                             "type": "text"
                         }
                     ],
